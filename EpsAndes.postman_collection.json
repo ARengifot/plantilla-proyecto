@@ -1,0 +1,678 @@
+{
+    "info": {
+      "_postman_id": "e0b7167c-ddc4-49db-ab53-f41c7485825d",
+      "name": "EPSANDES",
+      "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+      "_exporter_id": "20585343",
+      "_collection_link": "https://solar-spaceship-244943.postman.co/workspace/aaa~ed20b85b-f663-45c4-851e-143e241a0f31/collection/19767625-e0b7167c-ddc4-49db-ab53-f41c7485825d?action=share&source=collection_link&creator=19767625"
+    },
+    "item": [
+      {
+        "name": "EPS",
+        "item": [
+          {
+            "name": "GET All EPS",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/eps",
+                "host": ["{{base_url}}"],
+                "path": ["api", "eps"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "GET EPS by NIT",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/eps/9001234567",
+                "host": ["{{base_url}}"],
+                "path": ["api", "eps", "9001234567"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "POST Create EPS",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"nit\": \"9001234567\",\n  \"nombre\": \"SaludTotal\"\n}"
+              },
+              "url": {
+                "raw": "{{base_url}}/api/eps",
+                "host": ["{{base_url}}"],
+                "path": ["api", "eps"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "DELETE EPS",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/eps/9001234567",
+                "host": ["{{base_url}}"],
+                "path": ["api", "eps", "9001234567"]
+              }
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "IPS",
+        "item": [
+          {
+            "name": "GET All IPS",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/ips",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ips"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "GET IPS by NIT",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/ips/9012345678",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ips", "9012345678"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "POST Create IPS",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"nit\": \"9012345678\",\n  \"nombre\": \"Clínica ABC\",\n  \"direccion\": \"Calle 45 #12-34\",\n  \"telefono\": \"3124567890\"\n}"
+              },
+              "url": {
+                "raw": "{{base_url}}/api/ips",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ips"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "DELETE IPS",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/ips/9012345678",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ips", "9012345678"]
+              }
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "ServicioSalud",
+        "item": [
+          {
+            "name": "GET All ServicioSalud",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/servicios",
+                "host": ["{{base_url}}"],
+                "path": ["api", "servicios"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "GET ServicioSalud by Codigo",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/servicios/S001",
+                "host": ["{{base_url}}"],
+                "path": ["api", "servicios", "S001"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "POST Create ServicioSalud",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"codigo\": \"S001\",\n  \"nombre\": \"Consulta General\",\n  \"descripcion\": \"Atención médica básica\",\n  \"tipo\": \"Consulta\"\n}"
+              },
+              "url": {
+                "raw": "{{base_url}}/api/servicios",
+                "host": ["{{base_url}}"],
+                "path": ["api", "servicios"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "DELETE ServicioSalud",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/servicios/S001",
+                "host": ["{{base_url}}"],
+                "path": ["api", "servicios", "S001"]
+              }
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "IpsServicio",
+        "item": [
+          {
+            "name": "GET All IpsServicio",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/ipsservicios",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ipsservicios"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "GET IpsServicio by IPS and Servicio",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/ipsservicios/9012345678/S001",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ipsservicios", "9012345678", "S001"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "POST Create IpsServicio",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"id\": {\n    \"ipsNit\": \"9012345678\",\n    \"servicioCodigo\": \"S001\"\n  }\n}"
+              },
+              "url": {
+                "raw": "{{base_url}}/api/ipsservicios",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ipsservicios"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "DELETE IpsServicio",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/ipsservicios/9012345678/S001",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ipsservicios", "9012345678", "S001"]
+              }
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "Afiliado",
+        "item": [
+          {
+            "name": "GET All Afiliados",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/afiliados",
+                "host": ["{{base_url}}"],
+                "path": ["api", "afiliados"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "GET Afiliado by Tipo y Número",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/afiliados/CC/12345678",
+                "host": ["{{base_url}}"],
+                "path": ["api", "afiliados", "CC", "12345678"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "POST Create Afiliado",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"tipoDocumento\": \"CC\",\n  \"numeroDocumento\": \"12345678\",\n  \"nombre\": \"Juan Pérez\",\n  \"fechaNacimiento\": \"1995-06-20\",\n  \"direccion\": \"Calle 123\",\n  \"telefono\": \"3101234567\",\n  \"tipo\": \"Cotizante\"\n}"
+              },
+              "url": {
+                "raw": "{{base_url}}/api/afiliados",
+                "host": ["{{base_url}}"],
+                "path": ["api", "afiliados"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "DELETE Afiliado",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/afiliados/CC/12345678",
+                "host": ["{{base_url}}"],
+                "path": ["api", "afiliados", "CC", "12345678"]
+              }
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "Beneficiario",
+        "item": [
+          {
+            "name": "GET All Beneficiarios",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/beneficiarios",
+                "host": ["{{base_url}}"],
+                "path": ["api", "beneficiarios"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "GET Beneficiario by NúmeroDocumento",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/beneficiarios/87654321",
+                "host": ["{{base_url}}"],
+                "path": ["api", "beneficiarios", "87654321"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "POST Create Beneficiario",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"numeroDocumento\": \"87654321\",\n  \"parentesco\": \"Hijo\"\n}"
+              },
+              "url": {
+                "raw": "{{base_url}}/api/beneficiarios",
+                "host": ["{{base_url}}"],
+                "path": ["api", "beneficiarios"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "DELETE Beneficiario",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/beneficiarios/87654321",
+                "host": ["{{base_url}}"],
+                "path": ["api", "beneficiarios", "87654321"]
+              }
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "Medico",
+        "item": [
+          {
+            "name": "GET All Medicos",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/medicos",
+                "host": ["{{base_url}}"],
+                "path": ["api", "medicos"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "GET Medico by Tipo y Número",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/medicos/CC/34567890",
+                "host": ["{{base_url}}"],
+                "path": ["api", "medicos", "CC", "34567890"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "POST Create Medico",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"tipoDocumento\": \"CC\",\n  \"numeroDocumento\": \"34567890\",\n  \"nombre\": \"Dr. Ramírez\",\n  \"especialidad\": \"Pediatría\",\n  \"numeroRegistroMedico\": \"RM12345\"\n}"
+              },
+              "url": {
+                "raw": "{{base_url}}/api/medicos",
+                "host": ["{{base_url}}"],
+                "path": ["api", "medicos"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "DELETE Medico",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/medicos/CC/34567890",
+                "host": ["{{base_url}}"],
+                "path": ["api", "medicos", "CC", "34567890"]
+              }
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "MedicoIps",
+        "item": [
+          {
+            "name": "GET All MedicoIps",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/medicoips",
+                "host": ["{{base_url}}"],
+                "path": ["api", "medicoips"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "GET MedicoIps by Medico and IPS",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/medicoips/34567890/9012345678",
+                "host": ["{{base_url}}"],
+                "path": ["api", "medicoips", "34567890", "9012345678"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "POST Create MedicoIps",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"id\": {\n    \"medicoNumeroDocumento\": \"34567890\",\n    \"ipsNit\": \"9012345678\"\n  }\n}"
+              },
+              "url": {
+                "raw": "{{base_url}}/api/medicoips",
+                "host": ["{{base_url}}"],
+                "path": ["api", "medicoips"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "DELETE MedicoIps",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/medicoips/34567890/9012345678",
+                "host": ["{{base_url}}"],
+                "path": ["api", "medicoips", "34567890", "9012345678"]
+              }
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "OrdenServicio",
+        "item": [
+          {
+            "name": "GET All OrdenServicio",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/ordenservicios",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ordenservicios"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "GET OrdenServicio by ID",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/ordenservicios/O001",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ordenservicios", "O001"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "POST Create OrdenServicio",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"id\": \"O001\",\n  \"fecha\": \"2024-02-10\",\n  \"estado\": \"Pendiente\",\n  \"afiliadoDocumento\": \"12345678\",\n  \"medicoDocumento\": \"34567890\"\n}"
+              },
+              "url": {
+                "raw": "{{base_url}}/api/ordenservicios",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ordenservicios"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "DELETE OrdenServicio",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/ordenservicios/O001",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ordenservicios", "O001"]
+              }
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "OrdenServicioSalud",
+        "item": [
+          {
+            "name": "GET All OrdenServicioSalud",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/ordenserviciosalud",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ordenserviciosalud"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "GET OrdenServicioSalud by Orden and Servicio",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/ordenserviciosalud/O001/S001",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ordenserviciosalud", "O001", "S001"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "POST Create OrdenServicioSalud",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n  \"id\": {\n    \"ordenId\": \"O001\",\n    \"servicioCodigo\": \"S001\"\n  }\n}"
+              },
+              "url": {
+                "raw": "{{base_url}}/api/ordenserviciosalud",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ordenserviciosalud"]
+              }
+            },
+            "response": []
+          },
+          {
+            "name": "DELETE OrdenServicioSalud",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{base_url}}/api/ordenserviciosalud/O001/S001",
+                "host": ["{{base_url}}"],
+                "path": ["api", "ordenserviciosalud", "O001", "S001"]
+              }
+            },
+            "response": []
+          }
+        ]
+      }
+    ],
+    "variable": [
+      {
+        "key": "base_url",
+        "value": "http://localhost:8080"
+      }
+    ]
+  }
+  
